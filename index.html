@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2fde82393.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-color': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 flex justify-between border-solid border-2 border-green-500">
+                <div class="navbar-start w-full flex justify-between border-solid border-2 border-red-500">
+                    <div class="border-solid border-2 border-yellow-500 flex gap-3 items-center">
+                        <div class="bg-primary-color w-7 h-7 rounded-full text-black my-0 mx-auto flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </div>
+                        <a class="text-3xl">Rinterio</a>
+                    </div>
+                    <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex border-solid border-2 border-sky-500">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end border-solid border-2 border-sky-500 w-96 flex justify-around hidden">
+                    <div class="border-solid border-2 border-red-500">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <a class="btn bg-primary-color text-black rounded-full font-extrabold px-8">Book Consult</a>
+                </div>
+              </div>
+        </nav>
+    </header>
 </body>
 </html>
