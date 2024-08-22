@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,7 @@
             extend: {
               colors: {
                 'primary-color': '#ABEF5F',
+                'black':'#212121',
               }
             }
           }
@@ -69,15 +70,28 @@
                         <a href=""><i class="fa-solid fa-cart-shopping text-xl"></i></a>
                     </div>
                     <div>
-                        <a class="btn hover:bg-white bg-primary-color text-black rounded-full text-xl font-extrabold px-8">Book Consult <div class="bg-black w-7 h-7 rounded-full text-white my-0 mx-auto flex justify-center items-center">
+                        <a class="btn hover:bg-green-200 bg-primary-color text-black rounded-full text-xl font-extrabold px-8">Book Consult <div class="bg-black w-7 h-7 rounded-full text-white my-0 mx-auto flex justify-center items-center">
                             <i class="fa-solid fa-arrow-right -rotate-45"></i>
                         </div>
                         </a>
-                        </div>
+                    </div>
                     </div>
                 </div>
               </div>
         </nav>
+        <section>
+            <div class="flex flex-col gap-8 mt-4">
+                <div><img class="mx-auto" src="assets/banner.png" alt=""></div>
+                <h1 class="text-3xl w-3/4 mx-auto font-black text-center black lg:text-6xl">A barn house of this design  has a <br>striking appearance</h1>
+                <p class="text-base font-medium text-center px-4 lg:w-2/4 lg:mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <div class="flex justify-center">
+                    <a class="btn hover:bg-green-200 bg-primary-color bg-opacity-50 text-black rounded-full text-xl font-extrabold px-8 border-solid border-1 border-primary-color-500">View Details<div class="bg-primary-color w-7 h-7 rounded-full my-0 mx-auto flex justify-center items-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>
