@@ -228,59 +228,140 @@
             <div class="lg:w-1/4 mx-auto my-8">
                 <h1 class="text-center text-3xl font-extrabold">Meet The Board</h1>
             </div>
-            <!-- Member Card -->
-            <div class="flex flex-col lg:flex-row gap-8 w-4/5 mx-auto my-6 p-6">
-                <!-- 1st Card -->
-                <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
-                    <figure class="">
-                        <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/fonda.jpg" alt=""/>
-                    </figure>
-                    <div class="card-body w-4/5 mx-auto">
-                      <h2 class="card-title">Henry Fonda</h2>
-                      <p>Chairman</p>
-                      <div class="card-actions justify-center">
-                        <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
-                      </div>
+            <!-- Member Card Large Device-->
+            <div class="hidden sm:block">
+                <div class="flex flex-col lg:flex-row gap-8 w-4/5 mx-auto my-6 p-6">
+                    <!-- 1st Card -->
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure class="">
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/fonda.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">Henry Fonda</h2>
+                          <p class="mx-auto text-center">Chairman</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- 2nd Card -->
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure>
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/hayat.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">Abul Hayat</h2>
+                          <p class="mx-auto text-center">Chief Executive Officer</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- 3rd Card -->
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure>
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/george.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">George Costanza</h2>
+                          <p class="mx-auto text-center">Chief Operating Officer</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg ">Learn More</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- 4th Card -->
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure>
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/mosby.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">Ted Mosby</h2>
+                          <p class="mx-auto text-center">Chief Technical Officer</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg ">Learn More</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
-                <!-- 2nd Card -->
-                <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
-                    <figure>
-                        <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/hayat.jpg" alt=""/>
-                    </figure>
-                    <div class="card-body w-4/5 mx-auto">
-                      <h2 class="card-title">Abul Hayat</h2>
-                      <p>Chief Executive Officer</p>
-                      <div class="card-actions justify-center">
-                        <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
-                      </div>
+            </div>
+            <!-- Carousel Small Device -->
+            <div class="carousel w-full lg:hidden">
+                <!-- Slide-1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure class="">
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/fonda.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">Henry Fonda</h2>
+                          <p class="mx-auto text-center">Chairman</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
+                          </div>
+                        </div>
                     </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
                 </div>
-                <!-- 3rd Card -->
-                <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
-                    <figure>
-                        <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/george.jpg" alt=""/>
-                    </figure>
-                    <div class="card-body w-4/5 mx-auto">
-                      <h2 class="card-title">George Costanza</h2>
-                      <p>Chief Operating Officer</p>
-                      <div class="card-actions justify-center">
-                        <button class="btn bg-primary-color p-4 mt-4 rounded-lg ">Learn More</button>
-                      </div>
+                <!-- Slide-2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure class="">
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/hayat.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">Abul Hayat</h2>
+                          <p class="mx-auto text-center">Chief Executive Officer</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
+                          </div>
+                        </div>
                     </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
                 </div>
-                <!-- 4th Card -->
-                <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
-                    <figure>
-                        <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/mosby.jpg" alt=""/>
-                    </figure>
-                    <div class="card-body w-4/5 mx-auto">
-                      <h2 class="card-title">Ted Mosby</h2>
-                      <p>Chief Technical Officer</p>
-                      <div class="card-actions justify-center">
-                        <button class="btn bg-primary-color p-4 mt-4 rounded-lg ">Learn More</button>
-                      </div>
+                <!-- Slide-3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure class="">
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/george.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">George Costanza</h2>
+                          <p class="mx-auto text-center">Chief Operating Officer</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
+                          </div>
+                        </div>
                     </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <!-- Slide-4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="card bg-base-100 w-72 mx-auto lg:w-96 shadow-xl bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover bg-center lg:bg-opacity-20">
+                        <figure class="">
+                            <img class="lg:w-60 lg:h-[300px] rounded-lg" src="assets/mosby.jpg" alt=""/>
+                        </figure>
+                        <div class="card-body w-4/5 mx-auto">
+                          <h2 class="card-title mx-auto">Ted Mosby</h2>
+                          <p class="mx-auto text-center">Chief Technical Officer</p>
+                          <div class="card-actions justify-center">
+                            <button class="btn bg-primary-color p-4 mt-4 rounded-lg">Learn More</button>
+                          </div>
+                        </div>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
                 </div>
             </div>
         </section>
